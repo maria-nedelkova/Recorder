@@ -61,6 +61,7 @@ export const App = () => {
         setSeconds(5);
         setIsRecording(true);
       } else {
+        webAudioRecorder.cancelRecording();
         setIsRecording(false);
         setSeconds(5);
       }
